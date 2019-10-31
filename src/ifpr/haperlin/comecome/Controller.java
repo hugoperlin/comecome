@@ -55,7 +55,7 @@ public class Controller {
         pane.setOnMouseClicked(e->{
             try{
                 if(jogador==null){
-                    jogador = new Jogador("AAA",e.getX(),e.getY(),10);
+                    jogador = new Jogador("AAA",e.getX(),e.getY(),10, Color.BEIGE);
                     pane.getChildren().add(jogador);
                 }
 
