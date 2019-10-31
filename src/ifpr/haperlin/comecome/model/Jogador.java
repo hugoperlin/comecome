@@ -20,7 +20,7 @@ public class Jogador extends Circle{
     private boolean vivo = true;
 
 
-    public Jogador(String nome, double x, double y, double tamanho) throws NomeInvalido {
+    public Jogador(String nome, double x, double y, double tamanho, Color cor) throws NomeInvalido {
         if(nome.length() > 3){
             throw new NomeInvalido();
         }
@@ -29,7 +29,7 @@ public class Jogador extends Circle{
         this.setRadius(tamanho);
         setTranslateX(x);
         setTranslateY(y);
-        this.setFill(Color.BLACK);
+        this.setFill(cor);
 
 
     }
